@@ -32,6 +32,7 @@ numToLet = (num) => {
 }
 
 submit = () => {
+
     let nombre = document.getElementById('nombre').value;
     let edad = parseInt(document.getElementById('edad').value);
     let area = document.getElementById('user-id');
