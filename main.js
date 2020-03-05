@@ -37,7 +37,13 @@ submit = () => {
     let edad = parseInt(document.getElementById('edad').value);
     let area = document.getElementById('user-id');
 
-    area.textContent = `${nombre} --> ${numToLet(edad)}`;
+    let calc = numToLet(edad);
+
+    if(calc === undefined ) {
+        area.textContent = `Su edad no está en el rango permitido.`
+    } else {
+        area.textContent = `${nombre} --> ${calc}`;
+    }
 };
 
 //////////////////////////////////////////////////////////////
